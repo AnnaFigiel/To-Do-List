@@ -1,0 +1,131 @@
+$text-color-primary: #333333;
+$text-color-secondary: #808080;
+$text-color-light: #F5F5F5;
+$min-width-tablet: 768px;
+$min-width-desktop: 1024px;
+$color-background-light: #dcdcdc;
+
+// #11D184
+
+@mixin background($backgroundImage) {
+    background-image: $backgroundImage;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+/* document */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: $text-color-primary;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1px;
+    margin: 0 auto;
+    .row {
+        &:before,
+        &:after {
+        content: "";
+        display: table;
+        clear: both;
+       }
+    }
+} 
+
+
+section {
+    width: 100%;
+}
+
+.header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;      
+}
+
+#toDoList {
+    height: 600px;
+    
+    
+    
+    .toDoList {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 80px;
+    }
+    
+    #listInstruction {
+        padding: 20px 10px 40px 10px;
+    }
+    
+    #taskList {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100px;
+        background-color: darkgrey;
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        padding: 10px;
+    }
+    
+    #taskInput {
+        padding: 10px;
+    }
+    
+    button {
+        margin: 15px;
+        padding: 3px 10px;
+        width: 100px;
+    }
+    
+    h2 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    
+    #addTaskButton, #removeFinishedTasksButton {
+        width: 200px;
+    }
+    
+    #counter {
+        padding-bottom: 30px;
+        color: goldenrod;
+        font-weight: 600;
+        height: 50px;
+    }
+    
+    .done {
+        color: #00e673;
+        text-decoration: line-through;
+    }
+    
+}
+
+
+
+

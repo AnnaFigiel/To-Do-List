@@ -59,8 +59,6 @@ section {
 #toDoList {
     height: 600px;
     
-    
-    
     .toDoList {
         padding: 20px;
         display: flex;
@@ -121,7 +119,14 @@ section {
     
     .done {
         color: #00e673;
+        color: forestgreen;
         text-decoration: line-through;
+    }
+    
+    .newTask {
+        list-style-type: decimal;
+        margin-left: 100px;
+        text-align: left;
     }
     
 }

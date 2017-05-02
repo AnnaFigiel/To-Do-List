@@ -21,7 +21,7 @@ $color-background-light: #dcdcdc;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: $text-color-primary;
 }
 
@@ -89,6 +89,8 @@ section {
     
     h1, h2 {
         padding: 10px;
+        text-transform: uppercase;
+        font-weight: 300;
     }
     
     #taskInput {
@@ -107,19 +109,18 @@ section {
     }
     
     #addTaskButton, #removeFinishedTasksButton {
-        width: 200px;
+        width: 250px;
     }
     
     #counter {
         padding-bottom: 30px;
         color: goldenrod;
-        font-weight: 600;
         height: 50px;
+        font-size: 26px;
     }
     
     .done {
-        color: #00e673;
-        color: forestgreen;
+        color: darkgreen;
         text-decoration: line-through;
     }
     

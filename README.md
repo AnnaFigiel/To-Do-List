@@ -2,4 +2,4 @@
 
 **My To-Do-List for task management**
 
-Link: https://annafigiel.github.io/To-Do-List/
+Link: https://annafigiel.github.io/To-Do-List-with-Java-Script/
